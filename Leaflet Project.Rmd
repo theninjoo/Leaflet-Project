@@ -10,11 +10,7 @@ knitr::opts_chunk$set(echo = FALSE)
 library(leaflet)
 ```
 
-## R Markdown
-
-This project is very useful. It displays a map with a single popup identifying the location of the world's tallest thermometer.
-
-## Ta da! The world's tallest thermometer!
+## July 11, 2018 -- The world's tallest thermometer!
 
 ```{r}
 leaflet() %>% 
