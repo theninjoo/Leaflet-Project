@@ -1,0 +1,24 @@
+---
+title: "The World's Tallest Thermometer"
+author: "Jordan Miller-Ziegler"
+date: "July 11, 2018"
+output: ioslides_presentation
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+library(leaflet)
+```
+
+## R Markdown
+
+This project is very useful. It displays a map with a single popup identifying the location of the world's tallest thermometer.
+
+## Ta da! The world's tallest thermometer!
+
+```{r}
+leaflet() %>% 
+  addTiles() %>% 
+  addMarkers(lat = 35.266322,lng = -116.072592, 
+             popup = "World's Tallest Thermometer")
+```
